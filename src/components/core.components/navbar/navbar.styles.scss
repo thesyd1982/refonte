@@ -1,0 +1,20 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+
+    &.private {
+        background-color: black;
+    }
+
+    &.public {
+        background-color: gray;
+    }
+
+    z-index: 9999;
+}
