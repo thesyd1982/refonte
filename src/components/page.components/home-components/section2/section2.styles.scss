@@ -1,81 +1,76 @@
-.shape {
+#section-2 {
+    height: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
 
+    .camsection {
 
-
-    &.section {
-        height: 950px;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
-        color: white;
+        width: 80%;
 
-        .camsection {
+        img {
+            // height: 85%;
+            // width: 85%;
+            // border: solid 1px red;
+            // margin: auto 2rem;
+        }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
+        .cam-infos {
 
-            img {
-                // height: 85%;
-                // width: 85%;
-                // border: solid 1px red;
-                // margin: auto 2rem;
+
+            .cam-title {
+                display: block;
+                text-align: center;
+                font-size: 2.4rem;
+                font-weight: 800;
+                text-transform: uppercase;
             }
 
-            .cam-infos {
+            p {
 
+                padding: 2rem;
+            }
 
-                .cam-title {
-                    display: block;
+            .cam-icons {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .cam-icon {
+
                     text-align: center;
-                    font-size: 2.4rem;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                }
+                    vertical-align: baseline;
+                    background-color: white;
+                    clip-path: circle(50% at 50% 50%);
+                    color: black;
 
-                p {
-
-                    padding: 2rem;
-                }
-
-                .cam-icons {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: flex-start;
-                    margin-bottom: 1rem;
-
-                    .cam-icon {
-
-                        text-align: center;
-                        vertical-align: baseline;
-                        background-color: white;
-                        clip-path: circle(50% at 50% 50%);
-                        color: black;
-
-                        height: 120px;
-                        width: 120px;
+                    height: 120px;
+                    width: 120px;
 
 
-                        &.cam-icon--big {
-                            height: 140px;
-                            width: 140px;
-                        }
+                    &.cam-icon--big {
+                        height: 140px;
+                        width: 140px;
                     }
-
-
-
                 }
 
-                .cam-button {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 2rem;
-                }
+
+
+            }
+
+            .cam-button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
             }
         }
     }

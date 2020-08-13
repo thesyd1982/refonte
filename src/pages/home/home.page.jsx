@@ -39,14 +39,6 @@ const Home = () => {
         lin="linear-gradient(45deg, #f1f1f1,#d1d1d1 )"
       ></Shape>
       <Section7 id={7} />
-      <Shape
-        key={10}
-        classname={"spacer-3"}
-        shapeType={"triangle"}
-        w="50vw"
-        h="40vh"
-        lin="linear-gradient(45deg, rgba(255,255,255,.6),rgba(255,255,255,.3))"
-      ></Shape>
       <Section8 id={8} />
       <Section9 id={9} />
     </Page>

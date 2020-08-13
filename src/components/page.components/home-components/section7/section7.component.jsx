@@ -4,7 +4,7 @@ import "./section7.styles.scss";
 import Shape from "../../../core.components/shape/shape.component";
 
 import AButton from "../../../core.components/button/aButton/aButton.component";
-
+import Overlay from "../../../core.components/overlay/overlay.component";
 const bg = "/img/bg-section-7.jpg";
 
 const Section7 = ({ id }) => {
@@ -14,11 +14,9 @@ const Section7 = ({ id }) => {
       id={`section-${id}`}
       classname={"section"}
       shapeType={"s7"}
-      w="100vw"
-      h="100vh"
       img={bg}
     >
-      <div className="overlay-bg">
+      <Overlay>
         <div className="stitle">
           <h3>MODERN LIFE AND WORK PULLS</h3>
           <span>Us All In A Million Different Directions</span>
@@ -32,7 +30,7 @@ const Section7 = ({ id }) => {
           </p>
           <AButton link={"/"} text={"GETTING STARTED"} />
         </div>
-      </div>
+      </Overlay>
     </Shape>
   );
 };

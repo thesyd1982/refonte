@@ -11,16 +11,16 @@ const shapes = {
   sp: "polygon(0% 100%, 100% 80%, 100% 0%, 0% 0%)",
 
   triangle: "polygon(0 39%, 0 0, 100% 18%)",
-  s5: "polygon(0 10vw, 100% 0%, 100% 100%,0 calc(100% - 10vw))",
-  s6:
-    "polygon(0% 0%, 50% 0%, 100% 0%, 100% 100%, 50% calc(100% - 60px), 0% 100%)",
-  s7: "polygon(0 20%, 100% 0, 100% 80%, 0% 100%)",
-  s9: "polygon(0 0, 100% 20%, 100% 100%, 0 100%)",
   s1: "polygon(0% 100%, 100% calc(100% - 10vw), 100% 0%, 0% 0%)",
   s2: "polygon(0 10vw, 100% 0%, 100% calc(100% - 10vw), 0% 100%)",
   s3: "polygon(0 10vw, 100% 0, 100% 100%, 0 calc(100% - 10vw))",
+  s5: "polygon(0 10vw, 100% 0%, 100% 100%,0 calc(100% - 10vw))",
+  s6: "polygon(0 0, 100% 10vw, 100% calc(100% - 10vw), 0 100%)",
+  s7: "polygon(0 10vw, 100% 0, 100% calc(100% - 10vw), 0% 100%)",
+  s8: "polygon(0 10vw, 100% 0%, 100% 100%, 0 calc(100% - 10vw))",
+  s9: "polygon(0 0, 100% 10vw, 100% 100%, 0 100%)",
   spacer1: "polygon(0 10vw, 0 0, 50% 5vw)",
-  space: "5vw)",
+  "triangle-2": "polygon(0 20vw, 0 0, 100% 10vw)",
 };
 
 const Shape = ({
