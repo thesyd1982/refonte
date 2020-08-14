@@ -18,16 +18,18 @@ const Section1 = ({ id }) => {
       classname={"section"}
       img={bg}
     >
-      <div className="columns">
-        <div className="col-l">
-          <h3 className="wtitle">{data[id - 1].section.title}</h3>
-          {data[id - 1].section.services.map(({ id, ...ohters }) => (
-            <HomeService key={id} id {...ohters} />
-          ))}
-        </div>
+      <div className="content">
+        <div className="columns">
+          <div className="col-l">
+            <h3 className="wtitle">{data[id - 1].section.title}</h3>
+            {data[id - 1].section.services.map(({ id, ...ohters }) => (
+              <HomeService key={id} id {...ohters} />
+            ))}
+          </div>
 
-        <div className="col-r">
-          <img src={cams} alt="" srcSet="" />
+          <div className="col-r">
+            <img src={cams} alt="" srcSet="" />
+          </div>
         </div>
       </div>
     </Shape>

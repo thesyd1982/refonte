@@ -1,5 +1,5 @@
 #section-8 {
-    height: 880px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -10,17 +10,22 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        max-width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
 
         .col {
-            max-width: 50%;
+
 
 
             &-right {
 
-                width: 45%;
 
-                background: white;
+                flex-basis: 60%;
+                flex-grow: 1;
+
                 color: black;
+
 
 
                 p {
@@ -32,12 +37,22 @@
 
                 .ip-cams-button {
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: flex-start;
-                    align-items: flex-start;
-
+                    align-items: center;
+                    max-width: 95%;
 
                     .a-button {
-                        margin-right: 1rem;
+                        flex-basis: 180px;
+
+
+                        &--black {
+                            flex-basis: 100px;
+                            margin-right: 1rem;
+                        }
+
+                        margin-bottom: 1rem;
+
                     }
                 }
 
@@ -46,11 +61,15 @@
 
             &-left {
 
+                flex-basis: 350px;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img {
-                    width: 70%;
-                    margin-top: -16%;
-
+                    margin-top: 1rem;
+                    width: 90%;
                 }
 
             }

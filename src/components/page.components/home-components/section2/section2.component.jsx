@@ -16,9 +16,11 @@ const Section2 = ({ id }) => {
       classname={"section"}
       img={bg}
     >
-      <div className="camsection">
-        <img src={cam} alt="" srcSet="" />
-        <div className="cam-infos">
+      <div className="columns">
+        <div className="col-left">
+          <img src={cam} alt="" srcSet="" />
+        </div>
+        <div className="col-rigth">
           <span className="cam-title">Nos cameras supportent</span>
           <span className="cam-title">L'Audio bidirectionnel</span>
           <p>

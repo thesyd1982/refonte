@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <Shape className="footer" img={bg} id={`footer`}>
-      <Overlay color={"red"}>
+      <Overlay color={"rgba(0,0,0,.85)"}>
         <div className="footer-columns">
           <FouterColumn title={"Title 1"}>
             <p>

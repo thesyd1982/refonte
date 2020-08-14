@@ -1,5 +1,5 @@
 #section-5 {
-    height: 950px;
+
 
 
 
@@ -14,34 +14,38 @@
                 justify-content: flex-start;
                 align-items: center;
                 height: 100%;
+                margin-bottom: -10vw;
 
-                .col-left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    color: #fff;
-                    width: 50%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.79);
+                .col {
+                    max-width: 100%;
 
-
-                    h3 {
+                    &-left {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         color: #fff;
-                        margin-bottom: 1rem;
-                    }
+                        width: 50%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.79);
 
-                    p {
-                        margin-bottom: 1rem;
-                        width: 80%;
-                    }
 
-                    img {
-                        width: 80%;
+                        h3 {
+                            color: #fff;
+                            margin-bottom: 1rem;
+                        }
+
+                        p {
+                            margin-bottom: 1rem;
+                            width: 80%;
+                        }
+
+                        img {
+                            width: 80%;
+                        }
                     }
                 }
             }
-
 
         }
     }
