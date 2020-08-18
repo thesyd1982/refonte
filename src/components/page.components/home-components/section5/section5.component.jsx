@@ -28,6 +28,7 @@ const Section5 = ({ id }) => {
             </p>
             <img src={camerasdcard} alt="" srcSet="" />
           </div>
+          <div className="col-right"></div>
         </div>
       </Overlay>
     </Shape>

@@ -4,11 +4,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
 
     .columns {
-
+        margin-top: 10vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -19,19 +19,19 @@
 
         .col {
             max-width: 100%;
-            flex-grow: 1;
-            height: 100%;
+            // height: 100%;
 
             &-left {
 
                 flex-basis: 400px;
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 80%;
-                    height: 100%;
+                    max-width: 550px;
                     border: solid 1px red;
 
                 }
@@ -40,7 +40,12 @@
             &-rigth {
 
                 width: 50%;
+                // flex-grow: 1;
 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 .cam-title {
                     display: block;
@@ -52,15 +57,18 @@
                 }
 
                 p {
-
+                    text-align: center;
+                    padding: 1rem;
                     margin-bottom: 1rem;
                 }
 
                 .cam-icons {
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: center;
                     align-items: flex-start;
                     margin-bottom: 1rem;
+                    max-width: 100%;
 
                     .cam-icon {
 

@@ -7,11 +7,13 @@ const linear = `linear-gradient(0deg,  ${color2} 0%,  ${color1} 100%)`;
 const shapes = {
   rectangle: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
   circle: "circle(50% at 50% 50%)",
-  hp: "polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)",
+  hero:
+    "polygon(100% 0, 100% calc(100% - 5vw), 50% 100%, 0 calc(100% - 5vw), 0 0)",
   sp: "polygon(0% 100%, 100% 80%, 100% 0%, 0% 0%)",
 
   triangle: "polygon(0 39%, 0 0, 100% 18%)",
-  s1: "polygon(0% 100%, 100% calc(100% - 10vw), 100% 0%, 0% 0%)",
+  s1: "polygon(50% 5vw, 100% 0, 100% calc(100% - 10vw), 0 100%, 0 0)",
+
   s2: "polygon(0 10vw, 100% 0%, 100% calc(100% - 10vw), 0% 100%)",
   s3: "polygon(0 10vw, 100% 0, 100% 100%, 0 calc(100% - 10vw))",
   s5: "polygon(0 10vw, 100% 0%, 100% 100%,0 calc(100% - 10vw))",

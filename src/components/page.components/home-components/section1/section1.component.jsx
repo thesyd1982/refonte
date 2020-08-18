@@ -20,14 +20,14 @@ const Section1 = ({ id }) => {
     >
       <div className="content">
         <div className="columns">
-          <div className="col-l">
+          <div className="col-left">
             <h3 className="wtitle">{data[id - 1].section.title}</h3>
             {data[id - 1].section.services.map(({ id, ...ohters }) => (
               <HomeService key={id} id {...ohters} />
             ))}
           </div>
 
-          <div className="col-r">
+          <div className="col-right">
             <img src={cams} alt="" srcSet="" />
           </div>
         </div>

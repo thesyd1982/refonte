@@ -9,23 +9,35 @@
         .wrap {
 
             .columns {
+
                 display: flex;
                 flex-wrap: wrap;
+
+
+
+                background-color: yellow;
+
                 justify-content: flex-start;
                 align-items: center;
+
                 height: 100%;
-                margin-bottom: -10vw;
+                width: 100%;
 
                 .col {
-                    max-width: 100%;
+
 
                     &-left {
+                        // width: 50%;
+                        // flex-grow: 1;
+
+                        align-self: flex-start;
+
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         color: #fff;
-                        width: 50%;
+                        max-width: 50%;
                         height: 100%;
                         background: rgba(0, 0, 0, 0.79);
 
@@ -36,13 +48,23 @@
                         }
 
                         p {
-                            margin-bottom: 1rem;
+                            margin-bottom: 2rem;
                             width: 80%;
                         }
 
                         img {
-                            width: 80%;
+                            width: 70%;
                         }
+
+
+                    }
+
+                    &-right {
+                        width: 50%;
+                        flex-grow: 1;
+                        background-color: red;
+
+
                     }
                 }
             }

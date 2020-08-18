@@ -1,12 +1,12 @@
 #section-1 {
 
-
+    // border: 1px solid transparent;
 
     .content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: space-around;
 
         .columns {
             margin-top: 10vw;
@@ -23,7 +23,7 @@
 
 
 
-                &-l {
+                &-left {
                     flex-basis: 400px;
                     flex-grow: 1;
                     // background-color: green;
@@ -103,7 +103,7 @@
                     }
                 }
 
-                &-r {
+                &-right {
 
                     display: flex;
                     justify-content: center;

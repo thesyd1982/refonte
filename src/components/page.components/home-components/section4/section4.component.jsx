@@ -15,19 +15,21 @@ const Section4 = ({ id }) => {
       classname={"section"}
       lin="linear-gradient(45deg, #fff,#fff )"
     >
-      <div className="stitle">
-        <h3>Réglage FACILE DE LA CAMÉRA</h3>
-        <div className="sinfos">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni hic
-            accusantium sit totam porro eum ipsa voluptatum? Rem, ipsa aut
-            repudiandae nobis dicta cumque nemo, obcaecati, tempora libero
-            reiciendis accusamus.
-          </p>
-          <img src={iphones} alt="" srcSet="" />
-          <div className="appstores">
-            <img src={googlePlay} alt="" srcSet="" />
-            <img src={appStore} alt="" srcSet="" />
+      <div className="content">
+        <div className="stitle">
+          <h3>Réglage FACILE DE LA CAMÉRA</h3>
+          <div className="sinfos">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+              hic accusantium sit totam porro eum ipsa voluptatum? Rem, ipsa aut
+              repudiandae nobis dicta cumque nemo, obcaecati, tempora libero
+              reiciendis accusamus.
+            </p>
+            <img src={iphones} alt="" srcSet="" />
+            <div className="appstores">
+              <img src={googlePlay} alt="" srcSet="" />
+              <img src={appStore} alt="" srcSet="" />
+            </div>
           </div>
         </div>
       </div>

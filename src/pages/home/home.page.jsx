@@ -40,6 +40,7 @@ const Home = () => {
       ></Shape>
       <Section7 id={7} />
       <Section8 id={8} />
+
       <Section9 id={9} />
     </Page>
   );
