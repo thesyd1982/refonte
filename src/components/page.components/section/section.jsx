@@ -5,7 +5,7 @@ const Section = ({ shape, layout = "2cols", left, right }) => {
   const { id, ...otherProps } = shape;
   return (
     <Shape id={`section-${id}`} {...otherProps}>
-      <SectionLayout layout left right />
+      <SectionLayout layout={layout} left={left} right={right} />
     </Shape>
   );
 };
