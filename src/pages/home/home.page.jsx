@@ -12,11 +12,19 @@ import Section6 from "../../components/page.components/home-components/section6/
 import Section7 from "../../components/page.components/home-components/section7/section7.component";
 import Section8 from "../../components/page.components/home-components/section8/section8.component";
 import Section9 from "../../components/page.components/home-components/section9/section9.component";
-
+import Section from "../../components/page.components/section/section";
 const Home = () => {
+  const bg = process.env.PUBLIC_URL + "/img/appart4.jpg";
+  const cams = process.env.PUBLIC_URL + "/img/cameras.png";
   return (
     <Page title={"home"} layout={"standard"}>
-      <Section1 id={1} />
+      <Section
+        id={10}
+        shape={{ id: 1, shapeType: "contact-s1", img: bg }}
+        left={<img src={cams} alt="" srcSet="" />}
+        right={<img src={cams} alt="" srcSet="" />}
+      />
+      {/* <Section1 id={1} /> */}
       <Section2 id={2} />
       <Section3 id={3} />
 

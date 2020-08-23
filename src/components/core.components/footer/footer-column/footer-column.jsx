@@ -1,10 +1,11 @@
 import React from "react";
 import "./footer-column.styles.scss";
-const FooterColumn = ({ id, title, children }) => {
+
+const FooterColumn = ({ classname, title, children }) => {
   return (
-    <div className={"footer-column"} id={`footer-column${id}`}>
-      <h3 className="title">{title}</h3>
-      <div className="footer-column--body">{children}</div>
+    <div className={`footer__main__column ${classname}`}>
+      <h3 className="footer__main__column__title">{title}</h3>
+      <div className="footer__main__column__body">{children}</div>
     </div>
   );
 };

@@ -3,11 +3,11 @@ import Footer from "../footer/footer.component";
 import Header from "../header/header.component";
 import "./layout.styles.scss";
 
-const renderLayout = (name, children) => {
+const renderLayout = (title, name, children) => {
   if (name === "standard")
     return (
       <div className="layout--standard">
-        <Header />
+        <Header title={title} />
         <main className="main" id={`main`}>
           {children}
         </main>
@@ -16,8 +16,8 @@ const renderLayout = (name, children) => {
     );
 };
 
-const Layout = ({ name, children }) => {
-  return renderLayout(name, children);
+const Layout = ({ title, name, children }) => {
+  return renderLayout(title, name, children);
 };
 
 export default Layout;

@@ -1,23 +1,29 @@
-.footer-column {
+.footer__main__column {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    border: solid 1px green;
-    padding: 1.5rem;
-    margin: .5rem;
-    color: #fff;
 
-    h3 {
+
+
+
+    border: 1px orange solid;
+
+    &__title {
+
         color: #fff;
-        background-color: red($color: red);
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
+        flex: 1rem 1;
 
     }
 
-    &--body {}
+    &__body {
+        padding: 1rem;
+        color: #fff;
+
+
+    }
+
+
+
+
 
 }

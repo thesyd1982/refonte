@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./top-navbar.styles.scss";
+import {
+  GrFacebookOption,
+  GrTwitter,
+  GrInstagram,
+  GrLinkedinOption,
+  GrPhone,
+  // GrLocation,
+} from "react-icons/gr";
 
 const TopNavbar = () => {
   return (
@@ -32,6 +40,35 @@ const TopNavbar = () => {
           </Link>
         </li>
       </ul>
+
+      <ul className="menu-socials">
+        <li className="menu-social">
+          <Link className="link" to="#">
+            <GrFacebookOption />
+          </Link>
+        </li>
+        <li className="menu-social">
+          <Link className="link" to="#">
+            <GrTwitter />
+          </Link>
+        </li>
+        <li className="menu-social">
+          <Link className="link" to="#">
+            <GrInstagram />
+          </Link>
+        </li>
+        <li className="menu-social">
+          <Link className="link" to="#">
+            <GrLinkedinOption />
+          </Link>
+        </li>
+      </ul>
+      <div className="phone">
+        <div className="phone__icon">
+          <GrPhone />
+        </div>
+        <div className="phone__number">+33 6 10 10 10 50</div>
+      </div>
     </div>
   );
 };

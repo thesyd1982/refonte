@@ -1,0 +1,42 @@
+.section-layout {
+
+
+
+    .cols {
+
+
+        color: #ffffff;
+
+
+
+
+        .col-l {
+
+            background: blue;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+
+
+        }
+
+        .col-r {
+            background-color: #f00;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+}
