@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "../navbar/navbar.component";
 import Hero from "../hero/hero.component";
 
-const Header = ({ title = "" }) => {
+const Header = ({ title = "", heroBg, carousel }) => {
   return (
     <div className="header" id={`header`}>
       <Navbar />
-      <Hero title={title} />
+      <Hero title={title} heroBg={heroBg} carousel={carousel} />
     </div>
   );
 };

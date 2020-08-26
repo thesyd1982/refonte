@@ -1,119 +1,144 @@
+@import '../../../../scss/main';
+
+$top-navbar-background:rgba($primary, .8);
+$top-navbar-color:rgba(216, 216, 216, 1);
+
+
+$top-navbar-background-scrolled:#000;
+$top-navbar-color-scrolled:#fff;
+
+$top-navbar-link-color: rgba(216, 216, 216, 1);
+$top-navbar-link-color-hover:#fff;
+
+$top-navbar-menu-link-font-size :0.9375rem;
+$top-navbar-social-link-font-size :0.9375rem;
+$top-navbar-phone-link-font-size :0.9375rem;
+
 .top-navbar {
+
 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 0.25fr 0.5fr 1fr;
-    grid-template-areas: "social phone menu";
-    width: 95%;
-    padding-bottom: .25rem;
+    grid-template-columns: 3rem 0.25fr 0.5fr 1fr 3rem;
+    grid-template-areas: ". social phone menu .";
+
     border-bottom: 1px rgba(255, 0, 0, 0.6) solid;
-    font-size: .9rem;
-
-    .menu-items {
-
-        grid-area: menu;
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
 
 
-        .menu-item {
+    z-index: 999;
+    background: $top-navbar-background;
+    color: $top-navbar-color;
 
-
-            margin-right: 1rem;
-
-            .link {
-                display: block;
-                text-decoration: none;
-                color: rgba(216, 216, 216, 1);
-                // border-bottom: 1px solid rgba(216, 216, 216, 0.6);
-
-                transition: 100ms border ease-in-out;
-                position: relative;
-
-
-                &:hover {
-
-                    color: #fff;
-
-
-                    //     border-bottom: 1px solid rgba(216, 216, 216, 1);
-
-                    //     &::after {
-                    //         opacity: 1;
-                    //     }
-                    // }
-
-                    // &::after {
-                    //     display: block;
-                    //     content: '';
-
-                    //     position: absolute;
-
-                    //     left: 1px;
-                    //     height: 1px;
-                    //     width: 1rem;
-                    //     border-bottom: 1px solid rgba(216, 216, 216, 1);
-                }
-            }
-        }
-    }
+    transition: 800ms all;
 
     .menu-socials {
 
         grid-area: social;
         list-style-type: none;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-
+        @extend %flex-center;
 
         .menu-social {
 
 
             margin-right: 1rem;
 
+
             .link {
-                text-decoration: none;
-                font-size: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: rgba(216, 216, 216, 1);
-                height: 100%;
-                width: 100%;
+                @extend %flex-center;
+                font-size: $top-navbar-social-link-font-size;
+
+                color: $top-navbar-link-color;
+
 
                 &:hover {
 
-                    color: #fff;
+                    color: $top-navbar-link-color-hover;
                 }
             }
         }
     }
 
-    .phone {
-        grid-area: phone;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 100;
+    .menu-items {
 
-        &__icon {
+        grid-area: menu;
+        @extend %flex-center;
+        list-style-type: none;
+
+
+
+        .menu-item {
             margin-right: 1rem;
-            font-size: .8rem;
-        }
 
-        &__number {
-            font-size: 1.2rem;
-            letter-spacing: 0.2rem;
+
+            .link {
+                @extend %flex-center;
+                color: $top-navbar-link-color;
+                font-size: $top-navbar-menu-link-font-size;
+                transition: 200ms color ease-in-out;
+
+                &:hover {
+                    color: $top-navbar-link-color-hover;
+                }
+            }
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .top-navbar {
+
+
+    .phones {
+
+        grid-area: phone;
+        @extend %flex-center;
+
+        &:hover {
+            color: $top-navbar-link-color-hover;
+        }
+
+        .phone {
+
+
+            font-weight: 100;
+
+
+            font-size: $top-navbar-phone-link-font-size;
+
+            &__number {
+
+                font-size: 1.3rem;
+                letter-spacing: 0.1rem;
+                color: $top-navbar-link-color;
+                @extend %flex-center;
+                justify-content: space-between;
+
+                font-family: Roboto;
+
+                &:hover {
+                    color: $top-navbar-link-color-hover;
+                }
+
+                &__icon {
+
+
+                    margin-right: 0.3rem;
+                    @extend %flex-center;
+
+
+
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        background: $top-navbar-background-scrolled;
+        color: $top-navbar-color-scrolled;
         display: none;
     }
+
 }
+
+// @media screen and (max-width: 768px) {
+//     .top-navbar {
+//         display: none;
+//     }
+// }

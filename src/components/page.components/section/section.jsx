@@ -1,4 +1,5 @@
 import React from "react";
+import "./section.styles.scss";
 import SectionLayout from "../section/layout/section-layout";
 import Shape from "../../core.components/shape/shape.component";
 import Overlay from "../../core.components/overlay/overlay.component";

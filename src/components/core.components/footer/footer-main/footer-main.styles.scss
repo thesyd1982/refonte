@@ -1,7 +1,6 @@
 .footer__main {
     width: calc(100% - 4rem);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 1rem;
 }
- 

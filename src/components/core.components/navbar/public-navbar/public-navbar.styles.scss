@@ -1,0 +1,64 @@
+@import '../../../../scss/main';
+
+$navbar-public-background:$primary;
+$navbar-public-color:#fff;
+
+$navbar-public-background-scrolled:rgba($navbar-public-color, .953);
+$navbar-public-color-scrolled: #363636;
+
+.navbar--public {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3rem 0.25fr 0.5fr 1fr 2rem;
+    grid-template-areas: ". logo . menu .";
+
+    font-size: 1.125rem;
+
+    z-index: 99999999999999;
+    background: $navbar-public-background;
+    color: $navbar-public-color;
+
+    transition: 800ms all;
+
+    &__menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: $navbar-public-color;
+
+
+
+        .menu-item {
+            color: $navbar-public-color;
+            text-transform: uppercase;
+            margin-right: 2rem;
+
+            &.scrolled {
+
+                color: $navbar-public-color-scrolled;
+
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        transform: translateY(-32px);
+        background: $navbar-public-background-scrolled;
+        color: $navbar-public-color-scrolled;
+
+
+        box-shadow: rgba(0, 0, 0, .24) 0 4px 9px 0;
+
+
+        padding: 0 2rem 0 0;
+
+
+
+    }
+}
