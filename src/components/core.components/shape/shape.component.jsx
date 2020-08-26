@@ -23,6 +23,8 @@ const shapes = {
   s9: "polygon(0 0, 100% 10vw, 100% 100%, 0 100%)",
   spacer1: "polygon(0 10vw, 0 0, 50% 5vw)",
   "triangle-2": "polygon(0 20vw, 0 0, 100% 10vw)",
+  "contact-s1":
+    "polygon(100% 0, 100% 50%, 50% 100% calc(100% - 10vw), 0 50%, 0 0, 50% 10vw)",
 };
 
 const Shape = ({
@@ -43,7 +45,7 @@ const Shape = ({
   return (
     <div
       id={id}
-      className={`shape ${classname}`}
+      className={`${classname}`}
       style={{
         background: `url(${img}),${lin}`,
         backgroundPosition: "center",

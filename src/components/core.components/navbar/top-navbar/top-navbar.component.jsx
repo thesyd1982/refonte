@@ -1,38 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./top-navbar.styles.scss";
+import data from "./top-navbar-data";
 
 const TopNavbar = () => {
+  const handleScroll = () => {
+    const scrollpos = window.scrollY;
+    if (scrollpos > 10) {
+      setScrolled("top-navbar scrolled");
+    } else {
+      setScrolled("top-navbar");
+    }
+  };
+  const [scrolledState, setScrolled] = useState("top-navbar");
+  useEffect(() => {
+    // Met à jour le  document via l’API du navigateur
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="top-navbar">
+    <nav className={scrolledState}>
       <ul className="menu-items">
-        <li className="menu-item">
-          <Link className="link" to="/contact">
-            Contact
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link className="link" to="/">
-            Plan du site
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link className="link" to="/">
-            Téléchargement
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link className="link" to="/">
-            Mentions légales
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link className="link" to="#">
-            Espace Client
-          </Link>
-        </li>
+        {data.links.map((link) => (
+          <li key={link.id} className="menu-item">
+            <Link className="link" to={link.path}>
+              {link.text}
+            </Link>
+          </li>
+        ))}
       </ul>
-    </div>
+
+      <ul className="menu-socials">
+        {data["social-links"].map((slink) => (
+          <li key={slink.id} className="menu-social">
+            <Link className="link" to={slink.path}>
+              {slink.icon}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="phones">
+        {data["phone-links"].map((plink) => (
+          <a key={plink.id} className="phone" href={`tel:${plink.text}`}>
+            <div className="phone__number">
+              <div className="phone__number__icon">{plink.icon}</div>
+              {plink.text}
+            </div>
+          </a>
+        ))}
+      </div>
+    </nav>
   );
 };
 

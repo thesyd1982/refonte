@@ -1,0 +1,6 @@
+.footer__main {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+}

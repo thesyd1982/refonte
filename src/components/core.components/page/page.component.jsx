@@ -1,8 +1,7 @@
 import React from "react";
-import Layout from "../layout/layout.component";
 
-const Page = ({ title, layout, children }) => {
-  return <Layout name={layout}>{children}</Layout>;
+const Page = ({ title, layout, heroBg, children }) => {
+  return <>{layout({ title, heroBg, children })}</>;
 };
 
 export default Page;

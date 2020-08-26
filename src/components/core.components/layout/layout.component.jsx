@@ -3,21 +3,21 @@ import Footer from "../footer/footer.component";
 import Header from "../header/header.component";
 import "./layout.styles.scss";
 
-const renderLayout = (name, children) => {
-  if (name === "standard")
-    return (
-      <div className="layout--standard">
-        <Header />
-        <main className="main" id={`main`}>
-          {children}
-        </main>
-        <Footer />
-      </div>
-    );
+const renderLayout = (title, heroBg, children) => {
+  //1*****
+  return (
+    <div className="layout--standard">
+      <Header title={title} heroBg={heroBg} />
+      <main className="main" id={`main`}>
+        {children}
+      </main>
+      <Footer />
+    </div>
+  );
 };
 
-const Layout = ({ name, children }) => {
-  return renderLayout(name, children);
+const Layout = ({ title, heroBg, children }) => {
+  return renderLayout(title, heroBg, children);
 };
 
 export default Layout;
