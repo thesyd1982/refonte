@@ -1,73 +1,43 @@
 #section-5 {
+	.overlay {
+		.wrap {
+			.columns {
+				height: 100%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: fit-content(80%);
+				grid-template-rows: 1fr;
+				grid-template-areas: "col-left";
 
+				.col {
+					&-left {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						color: #fff;
 
+						background: rgba(0, 0, 0, 0.79);
 
+						h3 {
+							color: #fff;
+							margin-bottom: 1rem;
+						}
 
+						p {
+							margin-bottom: 2rem;
+							width: 80%;
+						}
 
+						img {
+							width: 70%;
+						}
+					}
 
-    .overlay {
-        .wrap {
-
-            .columns {
-
-                // display: flex;
-                // flex-wrap: wrap;
-
-
-
-                // background-color: yellow;
-
-                // justify-content: flex-start;
-                // align-items: center;
-
-                height: 100%;
-                width: 100%;
-                display: grid;
-                grid-template-columns: fit-content(80%);
-                grid-template-rows: 1fr;
-                grid-template-areas: "col-left";
-
-                .col {
-
-
-                    &-left {
-
-                        // flex-grow: 1;
-
-                        // align-self: flex-start;
-
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        color: #fff;
-
-                        background: rgba(0, 0, 0, 0.79);
-
-
-                        h3 {
-                            color: #fff;
-                            margin-bottom: 1rem;
-                        }
-
-                        p {
-                            margin-bottom: 2rem;
-                            width: 80%;
-                        }
-
-                        img {
-                            width: 70%;
-                        }
-
-
-                    }
-
-                    &-right {
-                        // background-color: #f00
-                    }
-                }
-            }
-
-        }
-    }
+					&-right {
+					}
+				}
+			}
+		}
+	}
 }

@@ -1,41 +1,37 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 body {
+	overflow-x: hidden;
 
-    overflow-x: hidden;
+	overflow-y: auto;
 
+	font-family: "Catamaran", sans-serif;
+	color: #363636;
 
-    overflow-y: auto;
+	p {
+		font-family: "Roboto", sans-serif;
+	}
 
-    font-family: 'Catamaran', sans-serif;
-    color: #363636;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-align: center;
+	}
 
-    p {
-        font-family: 'Roboto', sans-serif;
-
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-align: center;
-    }
-
-    a {
-
-        text-decoration: none
-    }
+	a {
+		text-decoration: none;
+	}
 }

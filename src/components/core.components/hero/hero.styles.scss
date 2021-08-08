@@ -1,46 +1,46 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 50vh;
-  color: #fff;
-  z-index: 100;
-  font-size: 72px;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 50vh;
+	color: rgb(3, 1, 14);
+	z-index: 100;
+	font-size: 72px;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
 
-  cursor: default;
+	cursor: default;
 
-  span {
-    display: block;
-    font-size: 1rem;
+	span {
+		display: block;
+		font-size: 1rem;
 
-    a {
-      font-family: Roboto;
-      font-size: 1rem;
-      text-decoration: none;
-      color: #fff;
+		a {
+			font-family: Roboto;
+			font-size: 1rem;
+			text-decoration: none;
+			color: #fff;
 
-      &:hover {
-        color: red;
-      }
-    }
-  }
+			&:hover {
+				color: red;
+			}
+		}
+	}
 
-  h1 {
-    display: table;
-    font-family: Catamaran;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 1.2;
+	h1 {
+		display: table;
+		font-family: Catamaran;
+		font-size: 72px;
+		font-weight: 900;
+		line-height: 1.2;
 
-    text-align: center;
+		text-align: center;
 
-    text-transform: uppercase;
-    vertical-align: baseline;
+		text-transform: uppercase;
+		vertical-align: baseline;
 
-    /* :hover */
-    outline: none;
-  }
+		/* :hover */
+		outline: none;
+	}
 }

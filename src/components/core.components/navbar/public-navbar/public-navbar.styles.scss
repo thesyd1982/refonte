@@ -1,53 +1,53 @@
 @import "../../../../scss/main";
 
 $navbar-public-background: $primary;
-$navbar-public-color: #fff;
+$navbar-public-color: #dbdbdb;
 
-$navbar-public-background-scrolled: rgba($navbar-public-color, 0.953);
+$navbar-public-background-scrolled: rgba($navbar-public-color, 0.98);
 $navbar-public-color-scrolled: #363636;
 
 .navbar--public {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1rem auto 1fr 1rem;
-  grid-template-areas: ". logo  menu .";
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1rem auto 1fr 1rem;
+	grid-template-areas: ". logo  menu .";
 
-  font-size: 1.125rem;
+	font-size: 1.125rem;
 
-  z-index: 99999999999999;
-  background: $navbar-public-background;
-  color: $navbar-public-color;
+	z-index: 99999999999999;
+	background: $navbar-public-background;
+	color: $navbar-public-color;
 
-  transition: 800ms all;
-  @import "../../../../scss/main.scss";
+	transition: 800ms all;
+	@import "../../../../scss/main.scss";
 
-  &__menu {
-    grid-area: menu;
-    @extend %flex-center;
-    color: $navbar-public-color;
+	&__menu {
+		grid-area: menu;
+		@extend %flex-center;
+		color: $navbar-public-color;
 
-    .menu-item {
-      color: $navbar-public-color;
-      text-transform: uppercase;
-      margin-left: 2rem;
-      overflow-wrap: unset;
-      &.scrolled {
-        color: $navbar-public-color-scrolled;
+		.menu-item {
+			color: $navbar-public-color;
+			text-transform: uppercase;
+			margin-left: 2rem;
+			overflow-wrap: unset;
+			&.scrolled {
+				color: $navbar-public-color-scrolled;
 
-        &:hover {
-          color: red;
-        }
-      }
-    }
-  }
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
 
-  &.scrolled {
-    transform: translateY(-32px);
-    background: $navbar-public-background-scrolled;
-    color: $navbar-public-color-scrolled;
+	&.scrolled {
+		transform: translateY(-2rem);
+		background: $navbar-public-background-scrolled;
+		color: $navbar-public-color-scrolled;
 
-    box-shadow: rgba(0, 0, 0, 0.24) 0 4px 9px 0;
+		box-shadow: rgba(0, 0, 0, 0.24) 0 4px 9px 0;
 
-    padding: 0 2rem 0 0;
-  }
+		padding: 0 2rem 0 0;
+	}
 }

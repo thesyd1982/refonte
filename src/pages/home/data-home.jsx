@@ -1,8 +1,4 @@
-
-   
-  
-  
-  const data=[
+const data=[
    
             {
                 section: {

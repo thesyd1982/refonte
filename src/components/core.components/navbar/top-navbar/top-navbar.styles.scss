@@ -1,140 +1,113 @@
-@import '../../../../scss/main';
+@import "../../../../scss/main";
 
-$top-navbar-background:rgba($primary, .8);
-$top-navbar-color:rgba(216, 216, 216, 1);
+$top-navbar-background: #fa3138;
+$top-navbar-color: rgba(250, 250, 250, 1);
 
+$top-navbar-background-scrolled: #000;
+$top-navbar-color-scrolled: #fff;
 
-$top-navbar-background-scrolled:#000;
-$top-navbar-color-scrolled:#fff;
+$top-navbar-link-color: #dbdbdb;
+$top-navbar-link-color-hover: #fff;
 
-$top-navbar-link-color: rgba(216, 216, 216, 1);
-$top-navbar-link-color-hover:#fff;
-
-$top-navbar-menu-link-font-size :0.9375rem;
-$top-navbar-social-link-font-size :0.9375rem;
-$top-navbar-phone-link-font-size :0.9375rem;
+$top-navbar-menu-link-font-size: 0.9375rem;
+$top-navbar-social-link-font-size: 0.9375rem;
+$top-navbar-phone-link-font-size: 0.9375rem;
 
 .top-navbar {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 3rem 0.25fr 0.5fr 1fr 3rem;
+	grid-template-areas: ". social phone menu .";
 
+	border-bottom: 1px rgba(255, 0, 0, 0.6) solid;
 
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3rem 0.25fr 0.5fr 1fr 3rem;
-    grid-template-areas: ". social phone menu .";
+	z-index: 999;
+	background: $top-navbar-background;
+	color: $top-navbar-color;
 
-    border-bottom: 1px rgba(255, 0, 0, 0.6) solid;
+	transition: 800ms all;
 
+	.menu-socials {
+		grid-area: social;
+		list-style-type: none;
+		@extend %flex-center;
 
-    z-index: 999;
-    background: $top-navbar-background;
-    color: $top-navbar-color;
+		.menu-social {
+			margin-right: 1rem;
 
-    transition: 800ms all;
+			.link {
+				@extend %flex-center;
+				font-size: $top-navbar-social-link-font-size;
 
-    .menu-socials {
+				color: $top-navbar-link-color;
 
-        grid-area: social;
-        list-style-type: none;
-        @extend %flex-center;
+				&:hover {
+					color: $top-navbar-link-color-hover;
+				}
+			}
+		}
+	}
 
-        .menu-social {
+	.menu-items {
+		grid-area: menu;
+		@extend %flex-center;
+		list-style-type: none;
 
+		.menu-item {
+			margin-right: 1rem;
 
-            margin-right: 1rem;
+			.link {
+				@extend %flex-center;
+				color: $top-navbar-link-color;
+				font-size: $top-navbar-menu-link-font-size;
+				transition: 200ms color ease-in-out;
 
+				&:hover {
+					color: $top-navbar-link-color-hover;
+				}
+			}
+		}
+	}
 
-            .link {
-                @extend %flex-center;
-                font-size: $top-navbar-social-link-font-size;
+	.phones {
+		grid-area: phone;
+		@extend %flex-center;
 
-                color: $top-navbar-link-color;
+		&:hover {
+			color: $top-navbar-link-color-hover;
+		}
 
+		.phone {
+			font-weight: 100;
 
-                &:hover {
+			font-size: $top-navbar-phone-link-font-size;
 
-                    color: $top-navbar-link-color-hover;
-                }
-            }
-        }
-    }
+			&__number {
+				font-size: 1.3rem;
+				letter-spacing: 0.1rem;
+				color: $top-navbar-link-color;
+				@extend %flex-center;
+				justify-content: space-between;
 
-    .menu-items {
+				font-family: Roboto;
 
-        grid-area: menu;
-        @extend %flex-center;
-        list-style-type: none;
+				&:hover {
+					color: $top-navbar-link-color-hover;
+				}
 
+				&__icon {
+					margin-right: 0.3rem;
+					@extend %flex-center;
+				}
+			}
+		}
+	}
 
-
-        .menu-item {
-            margin-right: 1rem;
-
-
-            .link {
-                @extend %flex-center;
-                color: $top-navbar-link-color;
-                font-size: $top-navbar-menu-link-font-size;
-                transition: 200ms color ease-in-out;
-
-                &:hover {
-                    color: $top-navbar-link-color-hover;
-                }
-            }
-        }
-    }
-
-
-
-    .phones {
-
-        grid-area: phone;
-        @extend %flex-center;
-
-        &:hover {
-            color: $top-navbar-link-color-hover;
-        }
-
-        .phone {
-
-
-            font-weight: 100;
-
-
-            font-size: $top-navbar-phone-link-font-size;
-
-            &__number {
-
-                font-size: 1.3rem;
-                letter-spacing: 0.1rem;
-                color: $top-navbar-link-color;
-                @extend %flex-center;
-                justify-content: space-between;
-
-                font-family: Roboto;
-
-                &:hover {
-                    color: $top-navbar-link-color-hover;
-                }
-
-                &__icon {
-
-
-                    margin-right: 0.3rem;
-                    @extend %flex-center;
-
-
-
-                }
-            }
-        }
-    }
-
-    &.scrolled {
-        background: $top-navbar-background-scrolled;
-        color: $top-navbar-color-scrolled;
-        display: none;
-    }
-
+	&.scrolled {
+		background: $top-navbar-background-scrolled;
+		color: $top-navbar-color-scrolled;
+		display: none;
+	}
 }
 
 // @media screen and (max-width: 768px) {

@@ -1,41 +1,37 @@
 @import "../../../../scss/abstracts/placeholders";
 
 .section-layout {
-  height: 100%;
+	height: 100%;
 
-  .cols {
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
+	.cols {
+		color: #fff;
+		width: 100%;
+		height: 100%;
 
-    .col-l {
-      @extend %flex-center;
-      border: 1px solid #f00;
+		.col-l {
+			@extend %flex-center;
+			img {
+				width: 80%;
+			}
 
-      img {
-        width: 80%;
-      }
-
-      .col-r {
-        @extend %flex-center;
-        border: 1px solid #0ff;
-
-        img {
-          width: 80%;
-        }
-      }
-    }
-  }
+			.col-r {
+				@extend %flex-center;
+				img {
+					width: 80%;
+				}
+			}
+		}
+	}
 }
 
 .auto-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
-  grid-gap: 1rem;
+	--auto-grid-min-size: 16rem;
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(var(--auto-grid-min-size), 1fr)
+	);
+	grid-gap: 1rem;
 
-  border: 1px solid #ddd;
+	border: 1px solid #ddd;
 }

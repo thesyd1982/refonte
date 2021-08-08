@@ -1,103 +1,88 @@
 #section-2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
+	.columns {
+		margin-top: 10vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
 
-    .columns {
-        margin-top: 10vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
+		.col {
+			max-width: 100%;
+			&-left {
+				flex-basis: 400px;
 
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
+				img {
+					width: 80%;
+					max-width: 550px;
+				}
+			}
 
-        .col {
-            max-width: 100%;
-            // height: 100%;
+			&-rigth {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 
-            &-left {
+				.cam-title {
+					display: block;
+					text-align: center;
+					font-size: 2.4rem;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
 
-                flex-basis: 400px;
+				p {
+					text-align: center;
+					padding: 1rem;
+					margin-bottom: 1rem;
+				}
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+				.cam-icons {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: flex-start;
+					margin-bottom: 1rem;
+					max-width: 100%;
 
-                img {
-                    width: 80%;
-                    max-width: 550px;
-                    
-                }
-            }
+					.cam-icon {
+						text-align: center;
+						vertical-align: baseline;
+						background-color: white;
+						border-radius: 50%;
+						color: black;
+						margin: 1rem;
+						height: 7.5rem;
+						width: 7.5rem;
 
-            &-rigth {
+						&.cam-icon--big {
+							height: 8.5rem;
+							width: 8.5rem;
+						}
+					}
+				}
 
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .cam-title {
-                    display: block;
-                    text-align: center;
-                    font-size: 2.4rem;
-                    font-weight: 800;
-                    text-transform: uppercase;
-
-                }
-
-                p {
-                    text-align: center;
-                    padding: 1rem;
-                    margin-bottom: 1rem;
-                }
-
-                .cam-icons {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: flex-start;
-                    margin-bottom: 1rem;
-                    max-width: 100%;
-
-                    .cam-icon {
-
-                        text-align: center;
-                        vertical-align: baseline;
-                        background-color: white;
-                        border-radius: 50%;
-                        // clip-path: circle(50% at 50% 50%);
-                        color: black;
-                        margin: 1rem;
-                        height: 7.5rem;
-                        width: 7.5rem;
-
-
-                        &.cam-icon--big {
-                            height: 8.5rem;
-                            width: 8.5rem;
-                        }
-                    }
-
-
-
-                }
-
-                .cam-button {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 2rem;
-                }
-            }
-        }
-    }
+				.cam-button {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
 }

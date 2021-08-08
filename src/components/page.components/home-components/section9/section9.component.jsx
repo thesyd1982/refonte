@@ -7,7 +7,7 @@ import AButton from "../../../core.components/button/aButton/aButton.component";
 
 const Section9 = ({ id }) => {
   return (
-    <Shape key={id} id={`section-${id}`} classname={"section"} shapeType={"s9"}>
+    <Shape key={id} id={`section-${id}`} classname={"section"} >
       <div className="container">
         <h3>Profitez de votre comfort</h3>
         <form action="" method="post">

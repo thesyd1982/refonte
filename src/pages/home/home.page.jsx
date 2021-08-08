@@ -12,7 +12,7 @@ import Section6 from "../../components/page.components/home-components/section6/
 import Section7 from "../../components/page.components/home-components/section7/section7.component";
 import Section8 from "../../components/page.components/home-components/section8/section8.component";
 import Section9 from "../../components/page.components/home-components/section9/section9.component";
-import Section from "../../components/page.components/section/section";
+import Section  from "../../components/page.components/section/section";
 
 import sections from "./sections";
 import Layout from "../../components/core.components/layout/layout.component";

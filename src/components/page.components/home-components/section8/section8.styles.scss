@@ -1,78 +1,61 @@
 #section-8 {
-    // border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 
-    .columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 90%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+	.columns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		max-width: 90%;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 
-        .col {
+		.col {
+			&-right {
+				flex-basis: 60%;
+				flex-grow: 1;
+				color: black;
+				p {
+					width: 90%;
+					margin: 1rem;
+					text-align: left;
+				}
 
+				.ip-cams-button {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					align-items: center;
+					max-width: 95%;
 
+					.a-button {
+						flex-basis: 180px;
 
-            &-right {
+						&--black {
+							flex-basis: 100px;
+							margin-right: 1rem;
+						}
 
+						margin-bottom: 1rem;
+					}
+				}
+			}
 
-                flex-basis: 60%;
-                flex-grow: 1;
+			&-left {
+				flex-basis: 350px;
+				flex-grow: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-                color: black;
-
-
-
-                p {
-
-                    width: 90%;
-                    margin: 1rem;
-                    text-align: left;
-                }
-
-                .ip-cams-button {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                    align-items: center;
-                    max-width: 95%;
-
-                    .a-button {
-                        flex-basis: 180px;
-
-
-                        &--black {
-                            flex-basis: 100px;
-                            margin-right: 1rem;
-                        }
-
-                        margin-bottom: 1rem;
-
-                    }
-                }
-
-
-            }
-
-            &-left {
-
-                flex-basis: 350px;
-                flex-grow: 1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    margin-top: 1rem;
-                    width: 90%;
-                }
-
-            }
-        }
-    }
+				img {
+					margin-top: 1rem;
+					width: 90%;
+				}
+			}
+		}
+	}
 }

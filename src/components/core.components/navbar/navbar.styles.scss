@@ -1,25 +1,23 @@
+$navbar--private_bgc: black;
+$navbar--public_bgc: black;
+$navbar--public_color: white;
+
 .navbar {
+	.top-navbar {
+		height: 2rem;
+	}
 
-    .top-navbar {
-        height: 2rem;
-    }
+	&--private {
+		background-color: $navbar--private_bgc;
+	}
 
-    &.private {
-        background-color: black;
-    }
-
-    &--public {
-
-        position: fixed;
-        top: 2rem;
-        left: 0;
-        right: 0;
-        height: 3rem;
-        background-color: black;
-        color: white;
-        z-index: 999999999999999999999999999999999999999;
-
-    }
-
-
+	&--public {
+		position: fixed;
+		top: 2rem;
+		left: 0;
+		right: 0;
+		height: 3rem;
+		background-color: $navbar--public_bgc;
+		color: $navbar--public_color;
+	}
 }

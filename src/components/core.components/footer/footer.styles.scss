@@ -1,14 +1,17 @@
+$footer_bgc: #363636;
+
 .footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.25fr;
-  grid-template-areas: "footer___main" "footer___bottom";
+	background-color: $footer_bgc;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 0.25fr;
+	grid-template-areas: "footer___main" "footer___bottom";
+	margin-top: 10vw;
+	&__main {
+		grid-area: footer___main;
+	}
 
-  &__main {
-    grid-area: footer___main;
-  }
-
-  &__bottom {
-    grid-area: footer___bottom;
-  }
+	&__bottom {
+		grid-area: footer___bottom;
+	}
 }

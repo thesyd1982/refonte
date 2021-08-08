@@ -1,6 +1,6 @@
 import React from 'react';
 const PrivateNavbar = () => {
-    return ( <div className='navbar private'>
+    return ( <div className='navbar--private'>
                  private
              </div> );
 }
